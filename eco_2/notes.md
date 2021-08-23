@@ -156,6 +156,7 @@ Todos los bienes y servicios producidos por los ciudadanos/empresas/agentes econ
 
 #### PIB nominal
 La producción de un periodo representaba con los precios de ese periodo.
+
 #### PIB Real
 La producción de un periodo representaba con los precios de un año base.
 
@@ -262,6 +263,7 @@ $$
 D = \mathbb P = \frac {\text{PIB nominal}}{\text{PIB real}}100
 \end{gathered}
 $$
+
 ### Índice de Laspeyres
 
 $$

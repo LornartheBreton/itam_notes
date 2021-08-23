@@ -252,3 +252,34 @@ $$
 f(c)(b-a) = \int_a^b f(x)dx
 \end{gathered}
 $$
+
+## Composición de Funciones en Integrales
+En general,
+
+$$
+\begin{gathered}
+F(g(x)) = \int_{a}^{g(x)} f(t) dt
+\end{gathered}
+$$
+
+## **Teo** Regla de Leibinz
+Sea $f$ contínua en $[a,b]$ y $g(x),h(x)$ funciones derivables de $x \in [a,b]$. Entonces,
+
+$$
+\begin{gathered}
+\frac{dx}{d} \int_{g(x)}^{h(x)} f(t)dt = f(h(x))h'(x) - f(g(x))g'(x)
+\end{gathered}
+$$
+
+# Diferenciales
+
+## Def
+Se denota al **diferencial** de $x$ como $dx = \varDelta x$ y al **diferencial** de $y$ como $dy = f'(x)dx$. 
+
+## Reglas para diferenciales
+Sean $u = f(x), v=g(x)$ funciones diferenciables de $x$($\therefore du=f(x)dx, dv=g(x)dx$).   
+Entonces,
+
+1. $d(u+v) = du + dv$
+2. $d(uv) = du(v) + u(dv)$
+3. $d(\frac{v}{u}) = \frac{du(v)-u(dv)}{v^2}$

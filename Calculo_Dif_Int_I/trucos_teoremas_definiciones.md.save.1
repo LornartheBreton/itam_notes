@@ -1,0 +1,467 @@
+---
+title: Trucos, Teoremas y Definiciones
+author: Según el Gran Cornejo 
+fontsize: 12pt
+papersize:
+- letter
+header-includes:
+- \setlength\parindent{24pt}
+---
+\maketitle
+\thispagestyle{empty}
+\clearpage
+\tableofcontents
+\pagenumbering{roman}
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+# Propiedades del campo de los Números Reales
+
+## Suma
++ **CS0** $\forall a,b \in \mathbb{R} \implies a+b \in \mathbb{R}$ **Cerradura de la suma**
++ **CS1** $\forall a,b,c \in \mathbb{R} \implies a+(b+c)=(a+b)+c$ **Asociatividad de la suma**
++ **CS2** $\exists 0 \in \mathbb{R}:a+0=0+a=a \forall a \in \mathbb{R}$ **Existencia del Neutro Aditivo**
++ **CS3** $\forall a \in \mathbb{R} \exists b \in \mathbb{R}: a+b=b+a=0$ **Existencia del Inverso Aditivo**
++ **CS4** $\forall a,b \in \mathbb{R} \implies a+b=b+a$ **Conmutatividad de la Suma**
+
+## Producto 
++ **CP0** $\forall a,b \in \mathbb {R} \implies ab\in\mathbb{R}$ **Cerradura del producto**
++ **CP1** $\forall a,b,c \in \mathbb{R} \implies a(bc)=(ab)c$ **Asociatividad del producto**
++ **CP2** $\exists 1 \in \mathbb{R} : ma=am=a$ **Existencia del Neutro Multiplicativo**
++ **CP3** $\forall a \in \mathbb{R} -\{0\} \exists b \in \mathbb{R}: ab=ba=1$ **Existencia del Inverso Multiplicativo**
++ **CP4** $\forall a,b \in \mathbb{R} \implies ab=ba$ **Conmutatividad del Producto**
+
+### Distributividad
++ **CDi** $\forall a,b,c \in \mathbb{R} \implies a(b+c)=ab+ac$ **Distributividad del producto por la izquierda**
++ **CDd** $\forall a,b,c \in \mathbb{R} \implies (a+b)c=ac+bc$ **Distributividad del producto por la derecha**
+
+## Desigualdad
+
+### Transitividad de la Desigualdad
++ **DES1** $a < b \land b < c \therefore a < c$ 
++ **DES1** $a \le b \land b\le c \therefore a\le c$ 
+
+### Preservación de la Suma
++ **DES2** $a < b \implies a+c < b+c$ 
++ **DES2** $a \le b \implies a+c \le b+c$ 
+
+### Preservación de la Resta
++ **DES3** $a < b \implies a-c < b-c$ 
++ **DES3** $a \le b \implies a-c \le b-c$ 
+
+### Preservación del Producto Positivo
++ **DES4** $a < b \land c > 0 \implies ac < bc$ 
++ **DES4** $a \le b \land c > 0 \implies ac \le bc$ 
+
+### Reversión del Producto Negativo
++ **DES5** $a < b \land c < 0 \implies ac > bc$ 
++ **DES5** $a \le b \land c < 0 \implies ac \ge bc$ 
+
+### Recíprocos positivos 
+Si $a,b > 0 \implies$
+
++ **DES6** $a < b \iff \frac{1}{a} > \frac{1}{b}$ 
++ **DES6** $a \le b \iff \frac{1}{a} \ge \frac{1}{b}$ 
+
+### Recíprocos negativos
+Si $a,b < 0, \implies$
+
++ **DES7** $a < b \iff \frac{1}{a} > \frac{1}{b}$ 
++ **DES7** $a \le b \iff \frac{1}{a} \ge \frac{1}{b}$ 
+
+### Suma de Desigualdades
++ **DES8** $a < b \land a < d \implies a+c < b + d$ 
++ **DES8** $a \le b \land a \le d \implies a+c \le b + d$ 
+
+### Desigualdad de cocientes
+Si $a,b,c,d > 0 \implies$
+
++ **DES9** $\frac{a}{b} < \frac{c}{d} \iff ad < bc$ 
++ **DES9** $\frac{a}{b} \le \frac{c}{d} \iff ad \le bc$ 
+
+### Cuadrado de positivos
+Si $a,b > 0 \implies$
+
++ **DES10** $a < b \iff a^2 < b^2$ 
++ **DES10** $a \le b \iff a^2 \le b^2$ 
+
+### Cuadrado de negativos
+Si $a,b < 0 \implies$
+
++ **DES11** $a < b \iff a^2 > b^2$ 
++ **DES11** $a \le b \iff a^2 \ge b^2$ 
+
+### Raíz
+Si $a,b > 0 \implies$
+
++ **DES12** $a < b \iff \sqrt{a} < \sqrt{b}$ 
++ **DES12** $a \le b \iff \sqrt{a} \le \sqrt{b}$ 
+
+## Valor Absoluto
++ **VA0** $|a| = 0 \iff a=0$
++ **VA1** $|a| \ge 0$
++ **VA2** $|ab| = |a||b|$
++ **VA3** $|-a| = |a|$
++ **VA3** $|a-b| = |b-a|$
++ **VA4** $|\frac{a}{b}|+\frac{|a|}{|b|}$
++ **VA5** $|a+b| \le |a| + |b|$ **Desigualdad del Triángulo**
++ **VA6** $|a| < b \iff -b < a < b$
++ **VA6** $|a| \le b \iff -b \le a \le b$
++ **VA7** $a < |b| \iff a < b \lor a < -b$
++ **VA7** $a \le |b| \iff a \le b \lor a \le -b$
++ **VA8** $|a| = |b| \iff a=b \lor a=-b$
++ **VA9** $\sqrt{a^2} = |a|$
++ **VA10** $a^2 < b^2 \iff |a| < |b|$
++ **VA11** $a^2 < b^2 \iff \sqrt{a^2} < \sqrt{b^2}$
+
+# Límites
+
+## Definición de Límite por la Izquierda
+Sea $f: (a,b) \rightarrow \mathbb{R}$. Se dice que $L$ es límite de $f(x)$ cuando $x$ tiende a $b$ por la izquierda sí y sólo sí
+$$
+\begin{gathered}
+\forall \varepsilon > 0 \exists \delta > 0 : \forall x \in Dom(f)\\
+0 < b-x < \delta \implies |f(x) - L| < \varepsilon 
+\end{gathered}
+$$
+Y se denota como
+$$
+\lim_{x \to b^-}f(x) = L
+$$
+
+## Definición de Límite por la Derecha
+Sea $f: (a,b) \rightarrow \mathbb{R}$. Se dice que $L$ es límite de $f(x)$ cuando $x$ tiende a $b$ por la derecha sí y sólo sí
+$$
+\begin{gathered}
+\forall \varepsilon > 0 \exists \delta > 0 : \forall x \in Dom(f)\\
+0 < x-b < \delta \implies |f(x) - L| < \varepsilon 
+\end{gathered}
+$$
+Y se denota como
+$$
+\lim_{x \to b^+}f(x) = L
+$$
+
+## Definición de Límite/Límite Bilateral
+Sea $f: (a,b) \rightarrow \mathbb{R}$. Se dice que $L$ es límite de $f(x)$ cuando $x$ tiende a $b$ sí y sólo sí
+$$
+\begin{gathered}
+\forall \varepsilon > 0 \exists \delta > 0 : \forall x \in Dom(f)\\
+|x-b| < \delta \implies |f(x) - L| < \varepsilon 
+\end{gathered}
+$$
+Y se denota como
+$$
+\lim_{x \to b}f(x) = L
+$$
+
+## Teorema del Límite Bilateral
+Sea $f:(a,b) \to \mathbb{R}$. 
+
+$\lim_{x \to b}f(x)$ existe $\iff$
+
+**1)** $\lim_{x \to b^-}f(x)$ y $\lim_{x \to b^+}f(x)$ existen 
+
+**2)** $\lim_{x \to b^-}f(x) = \lim_{x \to b^+}f(x)$  
+Por lo tanto,
+$$
+\lim_{x \to b^-}f(x)=\lim_{x \to b}f(x) = \lim_{x \to b^+}f(x)
+$$ 
+
+## Teorema Invisible (Propiedades básicas de límites)
+
+### Límites por la izquierda
+Sean $f(x)$  y $g(x)$ dos funciones tales que
+$$
+\begin{gathered}
+\lim_{x \to c^-} f(x) = L_1\\
+\lim_{x \to c^-} g(x) = L_2
+\end{gathered}
+$$
+
+Entonces,
+
+#### Suma de límites
+$$
+\lim_{x \to c^-}(f(x)+g(x)) = L_1 + L_2 = \lim_{x \to c^-} f(x) + \lim_{x \to c^-} g(x)
+$$
+
+#### Resta de límites
+$$
+\lim_{x \to c^-}(f(x)-g(x)) = L_1 - L_2 = \lim_{x \to c^-} f(x) - \lim_{x \to c^-} g(x)
+$$
+
+#### Producto de límites
+$$
+\lim_{x \to c^-}(f(x)*g(x)) = L_1 * L_2 = \lim_{x \to c^-} f(x) * \lim_{x \to c^-} g(x)
+$$
+
+#### División de límites
+$$
+\begin{gathered}
+g(x) \not = 0 \\
+\lim_{x \to c^-}(\frac{f(x)}{g(x)})=\frac{L_1}{L_2}=\frac{\lim_{x \to c^-} f(x)}{\lim_{x \to c^-} g(x)}
+\end{gathered}
+$$
+
+#### Multiplicación por constante
+$$
+\begin{gathered}
+d \in \mathbb{R} \\
+\lim_{x \to c^-}(df(x)) = dL_1 = d (\lim_{x \to c^-} f(x))
+\end{gathered}
+$$
+
+### Límites por la derecha
+Sean $f(x)$  y $g(x)$ dos funciones tales que
+$$
+\begin{gathered}
+\lim_{x \to c^+} f(x) = L_1\\
+\lim_{x \to c^+} g(x) = L_2
+\end{gathered}
+$$
+
+Entonces,
+
+#### Suma de límites
+$$
+\lim_{x \to c^+}(f(x)+g(x)) = L_1 + L_2 = \lim_{x \to c^+} f(x) + \lim_{x \to c^+} g(x)
+$$
+
+#### Resta de límites
+$$
+\lim_{x \to c^+}(f(x)-g(x)) = L_1 - L_2 = \lim_{x \to c^+} f(x) - \lim_{x \to c^+} g(x)
+$$
+
+#### Producto de límites
+$$
+\lim_{x \to c^+}(f(x)*g(x)) = L_1 * L_2 = \lim_{x \to c^+} f(x) * \lim_{x \to c^+} g(x)
+$$
+
+#### División de límites
+$$
+\begin{gathered}
+g(x) \not = 0 \\
+\lim_{x \to c^+}(\frac{f(x)}{g(x)})=\frac{L_1}{L_2}=\frac{\lim_{x \to c^+} f(x)}{\lim_{x \to c^+} g(x)}
+\end{gathered}
+$$
+
+#### Multiplicación por constante
+$$
+\begin{gathered}
+d \in \mathbb{R} \\
+\lim_{x \to c^+}(df(x)) = dL_1 = d (\lim_{x \to c^+} f(x))
+\end{gathered}
+$$
+
+### Límites bilaterales
+Sean $f(x)$  y $g(x)$ dos funciones tales que
+$$
+\begin{gathered}
+\lim_{x \to c} f(x) = L_1\\
+\lim_{x \to c} g(x) = L_2
+\end{gathered}
+$$
+
+Entonces,
+
+#### Suma de límites
+$$
+\lim_{x \to c}(f(x)+g(x)) = L_1 + L_2 = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)
+$$
+
+#### Resta de límites
+$$
+\lim_{x \to c}(f(x)-g(x)) = L_1 - L_2 = \lim_{x \to c} f(x) - \lim_{x \to c} g(x)
+$$
+
+#### Producto de límites
+$$
+\lim_{x \to c}(f(x)*g(x)) = L_1 * L_2 = \lim_{x \to c} f(x) * \lim_{x \to c} g(x)
+$$
+
+#### División de límites
+$$
+\begin{gathered}
+g(x) \not = 0 \\
+\lim_{x \to c}(\frac{f(x)}{g(x)})=\frac{L_1}{L_2}=\frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}
+\end{gathered}
+$$
+
+#### Multiplicación por constante
+$$
+\begin{gathered}
+d \in \mathbb{R} \\
+\lim_{x \to c}(df(x)) = dL_1 = d (\lim_{x \to c} f(x))
+\end{gathered}
+$$
+
+## Los Límites más conocidos
+
+### Constante 
+$$
+\lim_{x \to a}(c) = c
+$$
+
+### Polinomio
+Si $f(x) = a_nx^n + a_{n-1}x^{n-1}+...+a_1x^1+a_0 \implies \lim_{x \to b}f(x)$ siempre existe y, además
+$$
+\lim_{x\to b}f(x)=a_nb^n + a_{n-1}b^{n-1}+...+a_1b^1+a_0  
+$$
+
+### Raíz $n$-ésima
+Si $f(x)=\sqrt[n]{x}$ entonces,
+
++ Si $b \ge 0$ y $n$ es par
+$$
+\lim_{x \to b} f(x) = \sqrt[n]{b}
+$$
+
++ Si $n$ es impar, $\forall b \in \mathbb{R}$
+$$
+\lim_{x \to b}f(x) = \sqrt[n]{b}
+$$
+
+### Elevación a la $n$ potencia
+Si $f(x) = x^n$, con $n,b \not = 0$ y $n \in \mathbb{Z}$
+$$
+\lim_{x \to b}f(x) = b^n
+$$
+
+### Seno de $x$ - $\sin (x)$
+$$
+\lim_{x \to b} \sin(x) = \sin (b)
+$$
+
+### Coseno de $x$ - $\cos (x)$
+$$
+\lim_{x \to b} \cos (x) = \cos (b)
+$$
+
+### Tangente de $x$ - $\tan (x)$
+$$
+\begin{gathered}
+\forall b \in \mathbb{R}-\{\frac{\pi}{2} + k \pi | k \in \mathbb{Z}\} \\
+\lim_{x\to b} \tan(x) = \tan(b)
+\end{gathered}
+$$
+
+#### Nota
+$$
+\tan(x) = \frac{\sin (x)}{\cos (x)}
+$$
+
+### Co-tangente de $x$ - $\cot (x)$
+$$
+\begin{gathered}
+\forall b \in \mathbb{R} - \{k\pi | k \in \mathbb{Z}\}\\
+\lim_{x \to b} \cot (x) = \cot (b)
+\end{gathered}
+$$
+
+### Secante de $x$ - $\sec (x)$
+$$
+\begin{gathered}
+\forall b \in \mathbb{R}-\{\frac{\pi}{2} + k \pi | k \in \mathbb{Z}\} \\
+\lim_{x\to b} \sec(x) = \sec(b)
+\end{gathered}
+$$
+
+### Cosecante de $x$ - $\csc (x)$
+$$
+\begin{gathered}
+\forall b \in \mathbb{R} - \{k\pi | k \in \mathbb{Z}\}\\
+\lim_{x \to b} \csc (x) = \csc (b)
+\end{gathered}
+$$
+
+### Logaritmo natural  - $\ln (x)$
+$$
+\begin{gathered}
+\forall b \in (0,\infty)\\
+\lim_{x \to b} \ln (x) = \ln (b)
+\end{gathered}
+$$
+
+### Logaritmo base $a$ - $\log_a (x)$ 
+$$
+\begin{gathered}
+\forall a,b \in (0,\infty)\\
+\lim_{x \to b} \log_a (x) = \log_a (b)
+\end{gathered}
+$$
+
+### Elevación a la $x$ potencia
+$$
+\begin{gathered}
+\forall b \in \mathbb{R}\\
+\lim_{x \to b} 2^x = 2^b 
+\end{gathered}
+$$
+
+### Límite Estrella $\bigstar$
+$$
+\lim_{x \to 0} \frac{\sin (x)}{x} = 1
+$$
+
+#### Nota
+El teorema anterior también es válido para límites izquierdos y derechos.
+
+## Teorema del Sandwich
+Sean $f(x),g(x)$ y $h(x)$ funciones definidas en un intérvalo $I$, excepto quizá en $c \in I$,tales que se cumple 
+$$
+\begin{gathered}
+\forall x \in I \\
+f(x) \le g(x) \le h(x)
+\end{gathered}
+$$
+y
+$$
+\lim_{x \to c} f(x) = L = \lim_{x \to c} h(x)
+$$
+
+Entonces,
+$$
+\lim_{x \to c} g(x) = L
+$$
+
+## Definición de límite al infinito
+Sea $f(x)$ una función. Se dice que $L \in R$ es límite de $f(x)$ cuando $x$ tiende a infinito $\iff$
+$$
+\begin{gathered}
+\forall \varepsilon > 0 \exists M > 0 : \forall x \in Dom(f)\\
+x > M \implies |f(x) - L | < \varepsilon 
+\end{gathered}
+$$
+Y se denota como
+$$
+\lim_{x \to \infty} f(x) = L
+$$
+
+## Definición de límite al menos infinito
+Sea $f(x)$ una función. Se dice que $L \in R$ es límite de $f(x)$ cuando $x$ tiende a menos infinito $\iff$
+$$
+\begin{gathered}
+\forall \varepsilon > 0 \exists M < 0 : \forall x \in Dom(f)\\
+x < M \implies |f(x) - L | < \varepsilon 
+\end{gathered}
+$$
+Y se denota como
+$$
+\lim_{x \to -\infty} f(x) = L
+$$
+
+## Definición de Asíntota horizontal
+Se dice que la recta $y = L \in \mathbb{R}$ (constante) es asíntota horizontal de la función $f(x)$ sí y sólo si ocurre al menos uno de los siguientes casos:
+
++ $\lim_{x \to \infty} f(x) = L$
++ $\lim_{x \to -\infty} f(x) = L$
+
+## Límite común al infinito/menos infinito 
+$$
+\begin{gathered}
+\lim_{x \to \infty} \frac{1}{x^n} = 0\\
+\lim_{x \to -\infty} \frac{1}{x^n} = 0
+\end{gathered}
+$$
