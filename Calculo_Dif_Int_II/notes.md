@@ -283,3 +283,79 @@ Entonces,
 1. $d(u+v) = du + dv$
 2. $d(uv) = du(v) + u(dv)$
 3. $d(\frac{v}{u}) = \frac{du(v)-u(dv)}{v^2}$
+
+# Integración por substitución (cambio de variable)
+
+## Recordar
+
+$$
+\begin{gathered}
+u = g(x) \implies du = g'(x)
+\end{gathered}
+$$
+
+## **Teo** Integración y $u$ y $du$
+Si $u=g(s)$ es una función derivable de $x$ cuyo rango es un intervalo $I$, y $f$ es contínua sobre $I$, entonces
+
+$$
+\begin{gathered}
+\int f(g(x))g'(x) dx = \int f(u)du
+\end{gathered}
+$$
+
+# Logaritmo Natural
+
+## **Def**
+Definimos a la función **logaritmo natural** de $x$, denotada como $\ln(x)$, como
+
+$$
+\begin{gathered}
+\ln(x) = \int_{1}^{x} \frac{1}{t} dt, \forall x>0
+\end{gathered}
+$$
+
+### Observación I
+Por definición, $\text{Dom}(\ln(x)) = (0,\infty)$
+
+### Observación II
+
+$$
+\begin{gathered}
+\ln(1) = \int_{1}^{1} \frac{1}{t} dt = 0 \\
+\therefore \ln(1) = 0
+\end{gathered}
+$$
+
+### Observación III
+
+$$
+\begin{gathered}
+\text{Si } x > 1 \implies ln(x) >0
+\end{gathered}
+$$
+
+### Observación IV
+
+$$
+\begin{gathered}
+\text{Si } 0< x < 1 \implies \ln(x) < 0
+\end{gathered}
+$$
+
+## **Teo** Derivación ded $\ln(x)$ 
+$ln(x)$ es contínua y derivable en $(0,\infty)$, y además, 
+
+$$
+\begin{gathered}
+\frac{d}{dx} (ln(x)) = \frac{1}{x}
+\end{gathered}
+$$
+
+### Observación
+Usando la regla de la cadena
+
+$$
+\begin{gathered}
+(\ln(u(x)))' = \frac{1}{u(x)} * u'(x) = \frac{u'(x)}{u(x)}
+\end{gathered}
+$$
