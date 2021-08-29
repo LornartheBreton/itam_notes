@@ -342,7 +342,7 @@ $$
 \end{gathered}
 $$
 
-## **Teo** Derivación ded $\ln(x)$ 
+## **Teo** Derivación de $\ln(x)$ 
 $ln(x)$ es contínua y derivable en $(0,\infty)$, y además, 
 
 $$
@@ -359,3 +359,11 @@ $$
 (\ln(u(x)))' = \frac{1}{u(x)} * u'(x) = \frac{u'(x)}{u(x)}
 \end{gathered}
 $$
+
+## **Teo** Propiedades de Logaritmos
+
+1. Si $x,y>0$ entonces $\ln(xy) = \ln(x) + \ln(y)$
+
+2. Si $n \in \mathbb{Q} \land x>0$ entonces $\ln(x^n) = n\ln(x)$
+
+3. Si $x,y>0$ entonces $\ln(\frac{x}{y}) = \ln(x) - \ln(y)$
