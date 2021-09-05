@@ -367,3 +367,50 @@ $$
 2. Si $n \in \mathbb{Q} \land x>0$ entonces $\ln(x^n) = n\ln(x)$
 
 3. Si $x,y>0$ entonces $\ln(\frac{x}{y}) = \ln(x) - \ln(y)$
+
+4. $\text{Dom} (\ln(x)) = (0, \infty)$
+
+5. $\text{Im} (\ln(x)) = (- \infty, \infty)$
+
+6. $ln(x)$ es creciente en todo su dominio
+
+7. La gráfica de $\ln(x)$ es cóncava en todo su dominio
+
+## **Def** Número $e$
+El número $e$ denota al número real que complue $\ln(e) = 1$
+
+### Observación
+
+$$
+\begin{gathered}
+\ln(e) = 1 \\
+\implies \int_{1}^{e} dt = 1
+\end{gathered}
+$$
+
+## Derivación Logarítmica
+
+### **Teo**
+Si $u(x)$ es una función derivable de $x$, entonces $f(x) = \ln(|u(x)|)$ tiene derivada
+
+$$
+\begin{gathered}
+f'(x) = \frac{u'(x)}{u(x)}, \forall x \text{ t.q. } |u(x)| \not = 0
+\end{gathered}
+$$
+
+### Ejemplo
+Supongamos que quiero derivar
+
+$$
+\begin{gathered}
+f(x) = \frac{(x²+1)⁵ \sin(3x)}{\sqrt{(1-x)}} \\
+\implies \ln(f(x)) = \ln(\frac{(x²+1)⁵ \sin(3x)}{\sqrt{(1-x)}}) \\
+\implies \ln(f(x)) = 5\ln(x²+1) + \ln(\sin(3x)) - \frac{1}{2} \ln(1-x) \text{ Por propiedades de logaritmos} \\
+\implies \ln'(f(x)) = [5\ln(x²+1) + \ln(\sin(3x)) - \frac{1}{2} \ln(1-x)]' \\
+\implies \frac{f'(x)}{f(x)}= 5\frac{2x}{x²+1} + \frac{cos(3x)}{\sin(3x)}3 - \frac{1}{2} \frac{-1}{1-x} \\
+\implies \frac{f'(x)}{f(x)}= \frac{10x}{x²+1} + 3\cot(3x) + \frac{1}{2-2x} \\
+\implies f'(x) = f(x)[\frac{10x}{x²+1} + 3\cot(3x) + \frac{1}{2-2x}] \\
+\implies f'(x) = (\frac{(x²+1)⁵ \sin(3x)}{\sqrt{(1-x)}}) (\frac{10x}{x²+1} + 3\cot(3x) + \frac{1}{2-2x}) \\
+\end{gathered} 
+$$
